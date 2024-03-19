@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Риколь</title>
+    <link rel="shortcut icon" href="image/favicon/favicon.ico" type="image/x-icon">
+    <!-- Шрифты -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic" rel="stylesheet">
+    <!-- Шрифтовые иконки -->
+    <link rel="stylesheet" href="fonts/icomoon/style.css"> 
+    <!-- fancybox попап --> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css" />
+    <!-- Сетка bootstrap -->
+    <link rel="stylesheet" href="css/grid.css">
+    <!-- Файл сброса стилей -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Файл стилей от slick-slider http://kenwheeler.github.io/slick/-->  
+    <link rel="stylesheet" href="css/slick.css"> 
+    <link rel="stylesheet" href="css/slick-theme.css"> 
+
+    
+    <!-- Файл стилей сайта -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header"> 
+        <!-- Мобильное меню -->
+        <div class="hamburger__wrap-mob">  
+            <div class="menu-n">
+                <nav class="menu">
+                    <p class="menu__title">
+                        Каталог 
+                        <button class="wrap-mob__close">
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </p>
+                    <ul class="menu__list"> 
+                        <li>
+                            <a class="menu__list-dws-next">Кирпич <i class="icon-arrow_rigth"></i></a>
+                            <ul class="menu__list-dws">
+                                <li class="menu__list-dws-back"><a>Назад</a></li>
+                                <li><a href="#">Белебеевский кирпич <i class="icon-arrow_rigth"></i></a></li>
+                                <li><a href="#">Железногорский кирпич <i class="icon-arrow_rigth"></i></a></li>
+                                <li><a href="#">Старооскольский кирпич <i class="icon-arrow_rigth"></i></a></li>
+                                <li><a href="#">Кирпич ЛСР <i class="icon-arrow_rigth"></i></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Искусственный камень <i class="icon-arrow_rigth"></i></a>
+                        </li>
+                        <li>
+                            <a href="#">Тротуарная плитка <i class="icon-arrow_rigth"></i></a> 
+                        </li>
+                        <li>
+                            <a href="#">Сопутствующие товары <i class="icon-arrow_rigth"></i></a>
+                        </li>
+                    </ul>
+    
+                    <ul class="header__nav"> 
+                        <li><a class="nav-link" href="#">О компании</a></li>
+                        <li><a class="nav-link" href="#">Новости</a></li>
+                        <li><a class="nav-link" href="#">Акции</a></li>
+                        <li><a class="nav-link" href="#">Контакты</a></li>
+                    </ul> 
+                </nav> 
+    
+                <div class="header__contacts">
+                    <address class="header__contacts-address">
+                        г. Благовещенск ул.Шимановского, 80 <br>
+                        <a href="mailto:info@ricol.ru" title="Написать письмо">info@ricol.ru</a>
+                    </address>
+                    <div class="header__phone">
+                        <a class="phone-link" href="tel:+74162770030" title="Позвонить">+7 (4162) 77-00-30</a>
+                        <a class="call-me" href="#">Заказать звонок</a>
+                    </div>
+                </div> 
+            </div>  
+        </div> 
+        <!--  -->
+        <div class="header__top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-5 col-md-2 col-sm-2 d-none d-sm-block"> 
+                        <button class="d-lg-none d-block hamburger">
+                            <span></span>
+                            <span></span>  
+                            <span></span> 
+                        </button>
+                        <div class="hamburger__substrate"></div>
+                        <nav>
+                            <ul class="header__nav"> 
+                                <li><a class="nav-link" href="#">О компании</a></li>
+                                <li><a class="nav-link" href="#">Новости</a></li>
+                                <li><a class="nav-link" href="#">Акции</a></li>
+                                <li><a class="nav-link" href="#">Контакты</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-xl-6 col-lg-5 col-md-8 col-sm-7 col-8">
+                        <div class="header__search">
+                            <form class="search-input" action="/">
+                                <input type="search" placeholder="Поиск по  сайту" required>
+                                <button class="search-input__btn" type="submit" title="Найти"><i class="icon-search"></i></button>
+                            </form> 
+                        </div> 
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-3 col-4">
+                        <div class="header__login"> 
+                            <a class="login-link" href="#" title="Авторизоваться"><i class="icon-user"></i> Войти</a>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+
+        <div class="header__down">
+            <div class="container">
+                <div class="row">
+                    <div class="col-2 d-sm-none">
+                        <button class="d-lg-none d-block hamburger">
+                            <span></span>
+                            <span></span>  
+                            <span></span> 
+                        </button>
+                        <div class="hamburger__substrate"></div>   
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-4 col-sm-4 col-6"> 
+                        <div class="header__down-logo">
+                            <a class="logo" href="#" title="На главную">
+                                <img src="image/logo.png" alt="Риколь">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-5 d-none d-sm-block">
+                        <div class="header__contacts">
+                            <address class="header__contacts-address d-none d-lg-block">
+                                г. Благовещенск ул.Шимановского, 80 <br>
+                                <a href="mailto:info@ricol.ru" title="Написать письмо">info@ricol.ru</a>
+                            </address>
+                            <div class="header__phone">
+                                <a class="phone-link" href="tel:+74162770030" title="Позвонить">+7 (4162) 77-00-30</a>
+                                <a class="call-me" href="#">Заказать звонок</a>
+                            </div>
+                        </div> 
+                    </div> 
+                    <div class="col-xl-3 col-lg-2 col-md-2 col-sm-3 col-4">
+                        <a class="header__basket basket" title="Оформить заказ"> 
+                            <i class="icon-basket"></i>
+                            <p class="d-none d-xl-flex">
+                                <span class="basket__sum">12 000, 60 р.</span> 
+                                <span class="basaket__text">Оформить заказ</span>
+                            </p> 
+                            <span class="basket__qnt">0</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- scroll-menu -->
+        <div class="header__scroll">
+            <div class="container">
+                <div class="row">
+                    <div class="col-2 d-lg-none">
+                        <button class="d-lg-none d-block hamburger">
+                            <span></span>
+                            <span></span>  
+                            <span></span> 
+                        </button>
+                        <div class="hamburger__substrate"></div>   
+                    </div>
+                    <div class="col-lg-2 offset-lg-0 col-md-3 offset-md-2 col-sm-4 offset-sm-2 col-6">
+                        <div class="header__down-logo">
+                            <a class="logo" href="#" title="На главную">
+                                <img src="image/logo.png" alt="Риколь">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 d-lg-block d-none">
+                        <ul class="header__scroll-list">
+                            <li><a href="#">Кирпич</a></li>
+                            <li><a href="#">Искусственный камень</a></li>
+                            <li><a href="#">Сопутствующие товары</a></li>
+                            <li><a href="#">Тротуарная плитка</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-1 offset-lg-0 col-md-2 offset-md-3 col-sm-2 offset-sm-2 col-3 offset-1">
+                        <a class="header__basket basket" title="Оформить заказ"> 
+                            <i class="icon-basket"></i>
+                            <span class="basket__qnt">0</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 d-none d-lg-block">
+                    <aside>
+                        <nav class="menu">
+                            <p class="menu__title">Каталог</p>
+                            <ul class="menu__list"> 
+                                <li>
+                                    <a href="#">Кирпич <i class="icon-arrow_rigth"></i></a>
+                                    <ul class="menu__list-dws">
+                                        <li><a href="#">Белебеевский кирпич <i class="icon-arrow_rigth"></i></a></li>
+                                        <li><a href="#">Железногорский кирпич <i class="icon-arrow_rigth"></i></a></li>
+                                        <li><a href="#">Старооскольский кирпич <i class="icon-arrow_rigth"></i></a></li>
+                                        <li><a href="#">Кирпич ЛСР <i class="icon-arrow_rigth"></i></a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Искусственный камень <i class="icon-arrow_rigth"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#">Тротуарная плитка <i class="icon-arrow_rigth"></i></a> 
+                                </li>
+                                <li>
+                                    <a href="#">Сопутствующие товары <i class="icon-arrow_rigth"></i></a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </aside> 
+                </div>
+
+                <div class="col-lg-9">
+                    <div class="stock"> 
+                        <div class="stock-slider__buttons">
+                            <button class="stock-slider__prev" type="button"><i class="icon-arrow_left"></i></button>
+                            <button class="stock-slider__next" type="button"><i class="icon-arrow_rigth"></i></button>
+                        </div> 
+                        <div class="stock-slider">
+                            <!--  -->
+                            <div>
+                                <div class="stock-slider__item">
+                                    <div class="stock-slider__img">
+                                        <img src="image/stock/slide-1.jpg" alt="img">
+                                    </div>
+                                    <div class="stock-slider__content">
+                                        <p class="stock-slider__content-note">
+                                            <b>Акция </b>до 20.02.2019
+                                        </p>
+                                        <h5 class="stock-slider__content-title">
+                                            Кирпич облицовочный керамический пустотелый Terca Safari Риф
+                                        </h5>
+                                        <span class="stock-slider__content-price">125,50 р./шт</span>
+                                        <button class="stock-slider__content-btn btn" type="button">Купить</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div>
+                                <div class="stock-slider__item">
+                                    <div class="stock-slider__img">
+                                        <img src="image/stock/slide-1.jpg" alt="img">
+                                    </div>
+                                    <div class="stock-slider__content">
+                                        <p class="stock-slider__content-note">
+                                            <b>Акция </b>до 20.02.2019
+                                        </p>
+                                        <h5 class="stock-slider__content-title">
+                                            Кирпич облицовочный керамический пустотелый Terca Safari Риф
+                                        </h5>
+                                        <span class="stock-slider__content-price">125,50 р./шт</span>
+                                        <button class="stock-slider__content-btn btn" type="button">Купить</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div>
+                                <div class="stock-slider__item">
+                                    <div class="stock-slider__img">
+                                        <img src="image/stock/slide-1.jpg" alt="img">
+                                    </div>
+                                    <div class="stock-slider__content">
+                                        <p class="stock-slider__content-note">
+                                            <b>Акция </b>до 20.02.2019
+                                        </p>
+                                        <h5 class="stock-slider__content-title">
+                                            Кирпич облицовочный керамический пустотелый Terca Safari Риф
+                                        </h5>
+                                        <span class="stock-slider__content-price">125,50 р./шт</span>
+                                        <button class="stock-slider__content-btn btn" type="button">Купить</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        
+        <section class="features">
+            <h3 class="visually-hidden">
+                Преимущества магазина
+            </h3>
+            <div class="container">
+                <div class="features__list">
+                    
+                    <div class="features__item">
+                        <div class="features__item-icon">
+                            <img src="image/svg/calendar.svg" alt="icon">
+                        </div>
+                        <p>
+                            10 лет на рынке 
+                            стройматериалов
+                        </p>
+                    </div>
+                    <!--  -->
+                    <div class="features__item">
+                        <div class="features__item-icon">
+                            <img src="image/svg/truck.svg" alt="icon">
+                        </div>
+                        <p>
+                            Самовывоз, <br>
+                            быстрая доставка
+                        </p>
+                    </div>
+                    <!--  -->
+                    <div class="features__item">
+                        <div class="features__item-icon">
+                            <img src="image/svg/surprise.svg" alt="icon">
+                        </div>
+                        <p>
+                            Скидки, акции <br>
+                            и бонусная программа
+                        </p>
+                    </div>
+                    <!--  -->
+                    <div class="features__item">
+                        <div class="features__item-icon">
+                            <img src="image/svg/box.svg" alt="icon">
+                        </div>
+                        <p>
+                            Свыше <br>
+                            11 000 товаров
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bestseller">
+            <div class="container">
+                <h2 class="title">Хит продаж</h2>
+                <div class="bestseller__content">
+                    <div class="row">
+
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <article class="product">  
+                                <header>
+                                    <span class="product__stock product__mark">В наличии</span>
+                                    <a href="#" title="Перейти к товару">
+                                        <div class="product__photo">
+                                            <img src="image/products/product-1.png" alt="photo">
+                                        </div>
+                                        <h6 class="product__title">Кирпич лицевой серый</h6>
+                                    </a> 
+                                </header> 
+                                <footer>
+                                    <ul class="product__feature">
+                                        <li><span>Цвет:</span> коричневый</li> 
+                                        <li><span>Размеры:</span> 250х120х88</li> 
+                                        <li><span>Вес:</span> 3,2 кг</li> 
+                                        <li><span>Морозостойкость:</span> F 100</li> 
+                                        <li><span>Прочность:</span>  М-175</li> 
+                                        <li><span>Количество на поддоне:</span> 352шт.</li> 
+                                    </ul>
+                                    <p class="product__price">
+                                        <span>45, <sup>90</sup> <i class="icon-rouble"></i></span>
+                                        /шт
+                                    </p>
+                                    <button class="product__btn" type="button"><i class="icon-basket-b"></i> <span><span class="product__btn-first">Добавить </span>в корзину</span></button>
+                                </footer>
+                            </article>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <article class="product">  
+                                <header>
+                                    <span class="product__order product__mark">Под заказ</span>
+                                    <a href="#" title="Перейти к товару">
+                                        <div class="product__photo">
+                                            <img src="image/products/product-2.png" alt="photo">
+                                        </div>
+                                        <h6 class="product__title">Маддалена</h6>
+                                    </a> 
+                                </header> 
+                                <footer>
+                                    <ul class="product__feature">
+                                        <li><span>Цвет:</span> коричневый</li> 
+                                        <li><span>Размеры:</span> 250х120х88</li> 
+                                        <li><span>Вес:</span> 3,2 кг</li> 
+                                        <li><span>Морозостойкость:</span> F 100</li> 
+                                        <li><span>Прочность:</span>  М-175</li> 
+                                        <li><span>Количество на поддоне:</span> 352шт.</li> 
+                                    </ul>
+                                    <p class="product__price">
+                                        <span>45, <sup>90</sup> <i class="icon-rouble"></i></span>
+                                        /шт
+                                    </p>
+                                    <button class="product__btn" type="button"><i class="icon-basket-b"></i> <span><span class="product__btn-first">Добавить </span>в корзину</span></button>
+                                </footer>
+                            </article>
+                        </div>
+                        
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <article class="product">  
+                                <header>
+                                    <span class="product__expected product__mark">Ожидается</span>
+                                    <a href="#" title="Перейти к товару">
+                                        <div class="product__photo">
+                                            <img src="image/products/product-3.png" alt="photo">
+                                        </div>
+                                        <h6 class="product__title">Кирпич шоколад лицевой одинарный</h6>
+                                    </a> 
+                                </header> 
+                                <footer>
+                                    <ul class="product__feature">
+                                        <li><span>Цвет:</span> коричневый</li> 
+                                        <li><span>Размеры:</span> 250х120х88</li> 
+                                        <li><span>Вес:</span> 3,2 кг</li> 
+                                        <li><span>Морозостойкость:</span> F 100</li> 
+                                        <li><span>Прочность:</span>  М-175</li> 
+                                        <li><span>Количество на поддоне:</span> 352шт.</li> 
+                                    </ul>
+                                    <p class="product__price">
+                                        <span>45, <sup>90</sup> <i class="icon-rouble"></i></span>
+                                        /шт
+                                    </p>
+                                    <button class="product__btn" type="button"><i class="icon-basket-b"></i> <span><span class="product__btn-first">Добавить </span>в корзину</span></button>
+                                </footer>
+                            </article>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <article class="product">  
+                                <header>
+                                    <span class="product__stock product__mark">В наличии</span>
+                                    <a href="#" title="Перейти к товару">
+                                        <div class="product__photo">
+                                            <img src="image/products/product-4.png" alt="photo">
+                                        </div>
+                                        <h6 class="product__title">Кирпич лицевой темно-красный рустик</h6>
+                                    </a> 
+                                </header> 
+                                <footer>
+                                    <ul class="product__feature">
+                                        <li><span>Цвет:</span> коричневый</li> 
+                                        <li><span>Размеры:</span> 250х120х88</li> 
+                                        <li><span>Вес:</span> 3,2 кг</li> 
+                                        <li><span>Морозостойкость:</span> F 100</li> 
+                                        <li><span>Прочность:</span>  М-175</li> 
+                                        <li><span>Количество на поддоне:</span> 352шт.</li> 
+                                    </ul>
+                                    <p class="product__price">
+                                        <span>45, <sup>90</sup> <i class="icon-rouble"></i></span>
+                                        /шт
+                                    </p>
+                                    <button class="product__btn" type="button"><i class="icon-basket-b"></i> <span><span class="product__btn-first">Добавить </span>в корзину</span></button>
+                                </footer>
+                            </article>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <article class="product">  
+                                <header>
+                                    <span class="product__expected product__mark">Ожидается</span>
+                                    <a href="#" title="Перейти к товару">
+                                        <div class="product__photo">
+                                            <img src="image/products/product-5.png" alt="photo">
+                                        </div>
+                                        <h6 class="product__title">Кирпич лицевой серый</h6>
+                                    </a> 
+                                </header> 
+                                <footer>
+                                    <ul class="product__feature">
+                                        <li><span>Цвет:</span> коричневый</li> 
+                                        <li><span>Размеры:</span> 250х120х88</li> 
+                                        <li><span>Вес:</span> 3,2 кг</li> 
+                                        <li><span>Морозостойкость:</span> F 100</li> 
+                                        <li><span>Прочность:</span>  М-175</li> 
+                                        <li><span>Количество на поддоне:</span> 352шт.</li> 
+                                    </ul>
+                                    <p class="product__price">
+                                        <span>45, <sup>90</sup> <i class="icon-rouble"></i></span>
+                                        /шт
+                                    </p>
+                                    <button class="product__btn" type="button"><i class="icon-basket-b"></i> <span><span class="product__btn-first">Добавить </span>в корзину</span></button>
+                                </footer>
+                            </article>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <article class="product">  
+                                <header>
+                                    <span class="product__stock product__mark">В наличии</span>
+                                    <a href="#" title="Перейти к товару">
+                                        <div class="product__photo">
+                                            <img src="image/products/product-6.png" alt="photo">
+                                        </div>
+                                        <h6 class="product__title">Кирпич лицевой пустотелый</h6>
+                                    </a> 
+                                </header> 
+                                <footer>
+                                    <ul class="product__feature">
+                                        <li><span>Цвет:</span> коричневый</li> 
+                                        <li><span>Размеры:</span> 250х120х88</li> 
+                                        <li><span>Вес:</span> 3,2 кг</li> 
+                                        <li><span>Морозостойкость:</span> F 100</li> 
+                                        <li><span>Прочность:</span>  М-175</li> 
+                                        <li><span>Количество на поддоне:</span> 352шт.</li> 
+                                    </ul>
+                                    <p class="product__price">
+                                        <span>45, <sup>90</sup> <i class="icon-rouble"></i></span>
+                                        /шт
+                                    </p>
+                                    <button class="product__btn" type="button"><i class="icon-basket-b"></i> <span><span class="product__btn-first">Добавить </span>в корзину</span></button>
+                                </footer>
+                            </article>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <article class="product">  
+                                <header>
+                                    <span class="product__order product__mark">Под заказ</span>
+                                    <a href="#" title="Перейти к товару">
+                                        <div class="product__photo">
+                                            <img src="image/products/product-7.png" alt="photo">
+                                        </div>
+                                        <h6 class="product__title">Кирпич коричневый облицовочный</h6>
+                                    </a> 
+                                </header> 
+                                <footer>
+                                    <ul class="product__feature">
+                                        <li><span>Цвет:</span> коричневый</li> 
+                                        <li><span>Размеры:</span> 250х120х88</li> 
+                                        <li><span>Вес:</span> 3,2 кг</li> 
+                                        <li><span>Морозостойкость:</span> F 100</li> 
+                                        <li><span>Прочность:</span>  М-175</li> 
+                                        <li><span>Количество на поддоне:</span> 352шт.</li> 
+                                    </ul>
+                                    <p class="product__price">
+                                        <span>45, <sup>90</sup> <i class="icon-rouble"></i></span>
+                                        /шт
+                                    </p>
+                                    <button class="product__btn" type="button"><i class="icon-basket-b"></i> <span><span class="product__btn-first">Добавить </span>в корзину</span></button>
+                                </footer>
+                            </article>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <article class="product">  
+                                <header>
+                                    <span class="product__stock product__mark">В наличии</span>
+                                    <a href="#" title="Перейти к товару">
+                                        <div class="product__photo">
+                                            <img src="image/products/product-8.png" alt="photo">
+                                        </div>
+                                        <h6 class="product__title">Кирпич лицевой пустотелый </h6>
+                                    </a> 
+                                </header> 
+                                <footer>
+                                    <ul class="product__feature">
+                                        <li><span>Цвет:</span> коричневый</li> 
+                                        <li><span>Размеры:</span> 250х120х88</li> 
+                                        <li><span>Вес:</span> 3,2 кг</li> 
+                                        <li><span>Морозостойкость:</span> F 100</li> 
+                                        <li><span>Прочность:</span>  М-175</li> 
+                                        <li><span>Количество на поддоне:</span> 352шт.</li> 
+                                    </ul>
+                                    <p class="product__price">
+                                        <span>45, <sup>90</sup> <i class="icon-rouble"></i></span>
+                                        /шт
+                                    </p>
+                                    <button class="product__btn" type="button"><i class="icon-basket-b"></i> <span><span class="product__btn-first">Добавить </span>в корзину</span></button>
+                                </footer>
+                            </article>
+                        </div>
+
+                    </div>
+                </div> 
+            </div>
+        </section>
+
+        <section class="how-works">
+            <h3 class="visually-hidden">Как работает магазин</h3>
+            <div class="container">
+                <ul class="how-works__list">
+                    <li>
+                        <a class="how-works__link" href="#">
+                            <img src="image/svg/auto.svg" alt="icon">
+                            <span>Доставка</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="how-works__link" href="#">
+                            <img src="image/svg/purse.svg" alt="icon">
+                            <span>Варианты оплаты</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="how-works__link" href="#">
+                            <img src="image/svg/builder.svg" alt="icon">
+                            <span>Сервис</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="how-works__link" href="#">
+                            <img src="image/svg/box2.svg" alt="icon">
+                            <span>Обмен и возврат</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="how-works__link" href="#">
+                            <img src="image/svg/succes.svg" alt="icon">
+                            <span>Как оформить заказ</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-4">
+                        <div class="content__left-logo">
+                            <img src="image/logo-years.png" alt="logo">
+                        </div>
+                    </div>
+                    <div class="col-xl-9 col-lg-8">
+                        <p class="content-text">
+                            Компания «Риколь» – торговая компания, специализирующаяся на продаже строительных материалов и инструментов для промышленного, гражданского и частного домостроения. Клиентами компании являются профессиональные строители (подрядчики, застройщики, строительные компании), частные лица и дистрибьюторы.
+                        </p>
+                        <h1 class="content-title">Стройматериалы</h1>
+                        <p class="content-text">
+                            На данный момент насчитывается свыше 100 торговых отделений на территории России и стран Ближнего Зарубежья (Украина, Беларусь, Казахстан). Основные направления ассортимента: строительные и отделочные материалы, электрика и освещение, сантехника, инструмент и оборудование, товары для дома и сада. Количество сотрудников - более 2000 человек.
+                        </p>
+                        <p class="content-text">
+                            <i class="icon-check_wp check"></i> 11 000 товарныйх позиций в интеренет-каталоге
+                        </p>
+                        <p class="content-text">
+                            <i class="icon-check_wp check"></i> постоянное расширение ассортимента и поиск новых партнеров
+                        </p>
+                        <p class="content-text">
+                            Интернет-магазин Риколь представляет собой многофункциональный ресурс с возможностью оформить и оплатить заказ, получить профессиональные консультации, заказать необходимые услуги. Сайт удобен для работы как для конечных потребителей, так и для корпоративных B2B клиентов, которым открываются дополнительные функциональные возможности в личном кабинете. Для архитекторов и дизайнеров размещено множество фотографий международных проектов в разделе «Фотогалерея», профессиональные журналы и каталоги, а также полная документация по товарам и готовые технические решения.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="manufacturer">
+            <h2 class="visually-hidden">Производители</h2>
+            <div class="container">
+                <button class="manufacturer__slider-prev" type="button"><i class="icon-arrow_left"></i></button>
+                <button class="manufacturer__slider-next" type="button"><i class="icon-arrow_rigth"></i></button>
+                <div class="manufacturer__slider">
+                    
+                    <div> 
+                        <a class="manufacturer__slider-item" href="#">
+                            <div class="manufacturer__slider-img">
+                                <img src="image/manufacturer/bebelevskiy.png" alt="logo">
+                            </div>
+                            <p>
+                                Белебеевский кирпич
+                            </p>
+                        </a>  
+                    </div>
+                    <!--  --> 
+                    <div> 
+                        <a class="manufacturer__slider-item" href="#">
+                            <div class="manufacturer__slider-img">
+                                <img src="image/manufacturer/lsr.png" alt="logo">
+                            </div>
+                            <p>
+                                Кирпич ЛСР
+                            </p>
+                        </a>  
+                    </div>
+                    <!--  -->
+                    <div> 
+                        <a class="manufacturer__slider-item" href="#">
+                            <div class="manufacturer__slider-img">
+                                <img src="image/manufacturer/skriabin.png" alt="logo">
+                            </div>
+                            <p>
+                                Кирпич ручной формовки
+                            </p>
+                        </a>  
+                    </div> 
+                    <!--  --> 
+                    <div> 
+                        <a class="manufacturer__slider-item" href="#">
+                            <div class="manufacturer__slider-img">
+                                <img src="image/manufacturer/jeleznogorskiy.png" alt="logo">
+                            </div>
+                            <p>
+                                Железногорский кирпич
+                            </p>
+                        </a>  
+                    </div>
+                    <!--  -->
+                    <div> 
+                        <a class="manufacturer__slider-item" href="#">
+                            <div class="manufacturer__slider-img">
+                                <img src="image/manufacturer/staroodkolskiy.png" alt="logo">
+                            </div>
+                            <p>
+                                Старооскольский кирпич
+                            </p>
+                        </a>  
+                    </div>
+                    <!--  -->
+                    <div> 
+                        <a class="manufacturer__slider-item" href="#">
+                            <div class="manufacturer__slider-img">
+                                <img src="image/manufacturer/jeleznogorskiy.png" alt="logo">
+                            </div>
+                            <p>
+                                Железногорский кирпич
+                            </p>
+                        </a>  
+                    </div>
+                
+
+                </div>
+            </div>
+        </section>
+
+        <section class="news" style="background: url(image/brick-wall.png)">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <h2 class="title">Новости компании</h2>
+                    </div>
+                    <div class="col-sm-4 text-right">
+                        <a class="right-link" href="#">Архив новостей</a>
+                    </div> 
+                </div>
+                <div class="news__section">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6">
+                            <article class="news__wrap">
+                                <time datetime="2019-01-12">12.01.2019</time>
+                                <a href="#" class="news__wrap-title"><h5 class="news__wrap-title">Открытие шоу-рума</h5></a>
+                                <p>
+                                    Уважаемые партнеры и клиенты! <br>
+                                    Мы рады сообщить, что компания РИКОЛЬ открыла первый профессиональный шоу-рум керамики и клинкера. У нас Вы можете познакомиться с большим ассортиментом облицовочного и клинкерного кирпича.
+                                </p>
+                                <a href="#" title="Узнать подробнее">Подробнее</a>
+                            </article> 
+                        </div>
+    
+                        <div class="col-lg-4 col-md-6">
+                            <article class="news__wrap">
+                                <time datetime="2019-01-12">12.01.2019</time>
+                                <a href="#" class="news__wrap-title"><h5 class="news__wrap-title">Облицовочный кирпич в РИКОЛЬ храним БЕСПЛАТНО до лета 2019г.</h5></a>
+                                <p>
+                                    Уважаемые покупатели! Если Вы планируете покупку кирпича сейчас.
+                                </p>
+                                <a href="#" title="Узнать подробнее">Подробнее</a>
+                            </article> 
+                        </div>
+    
+                        <div class="col-lg-4 col-md-6">
+                            <article class="news__wrap">
+                                <time datetime="2019-01-12">12.01.2019</time>
+                                <a href="#" class="news__wrap-title"><h5 class="news__wrap-title">Облицовочный кирпич в РИКОЛЬ храним БЕСПЛАТНО до лета 2019г.</h5></a>
+                                <p>
+                                    Уважаемые покупатели! Если Вы планируете покупку кирпича сейчас, а начало строительства запланировано на весну, и  при этом Вы не знаете, где хранить приобретенный кирпич, то специально для Вас.
+                                </p>
+                                <a href="#" title="Узнать подробнее">Подробнее</a>
+                            </article> 
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </section>
+
+        <section class="photo-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <h2 class="title">Фотографии наших объектов</h2>
+                    </div>
+                    <div class="col-sm-4 text-right">
+                        <a class="right-link" href="#">Перейти  в галерею</a>
+                    </div> 
+                </div>
+                <div class="row photo-block__row">
+                    <div class="photo-block__wrap">
+                        <a href="image/objects/object-1.jpg" data-fancybox="gallery">
+                            <img src="image/objects/object-1.jpg" alt="photo">
+                        </a> 
+                    </div>
+                    <div class="photo-block__wrap">
+                        <a href="image/objects/object-2.jpg" data-fancybox="gallery">
+                            <img src="image/objects/object-2.jpg" alt="photo">
+                        </a> 
+                    </div>
+                    <div class="photo-block__wrap">
+                        <a href="image/objects/object-3.jpg" data-fancybox="gallery">
+                            <img src="image/objects/object-3.jpg" alt="photo">
+                        </a> 
+                    </div>
+                    <div class="photo-block__wrap">
+                        <a href="image/objects/object-4.jpg" data-fancybox="gallery">
+                            <img src="image/objects/object-4.jpg" alt="photo">
+                        </a> 
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <ul class="footer__list">
+                    <li class="footer__list-title">Каталог</li>
+                    <li><a href="#" class="nav-link">Кирпич</a></li>
+                    <li><a href="#" class="nav-link">Искусственный камень</a></li>
+                    <li><a href="#" class="nav-link">Тротуарная плитка</a></li>
+                    <li><a href="#" class="nav-link">Сопутствующие товары</a></li> 
+                </ul>
+
+                <ul class="footer__list">
+                    <li class="footer__list-title">Риколь</li>
+                    <li><a href="#" class="nav-link">О компании</a></li>
+                    <li><a href="#" class="nav-link">Сервис</a></li>
+                    <li><a href="#" class="nav-link">Фото объектов</a></li>
+                    <li><a href="#" class="nav-link">Новости</a></li>
+                    <li><a href="#" class="nav-link">Акции</a></li>
+                    <li><a href="#" class="nav-link">Контакты</a></li>
+                </ul>
+
+                <ul class="footer__list">
+                    <li class="footer__list-title">Помощь</li>
+                    <li><a href="#" class="nav-link">Доставка</a></li>
+                    <li><a href="#" class="nav-link">Оплата</a></li>
+                    <li><a href="#" class="nav-link">Обмен и возврат</a></li>
+                    <li><a href="#" class="nav-link">Как оформить заказ</a></li> 
+                </ul>
+
+                <div class="footer__blocks">
+                    <div class="footer__blocks-payments">
+                        <p class="footer__blocks-title">
+                            Способы оплаты
+                        </p>
+                        <ul class="footer__blocks-list">
+                            <li><a href="#" title="Мир"><img src="image/payment/mir.png" alt="logo"></a></li>
+                            <li><a href="#" title="Visa"><img src="image/payment/visa.png" alt="logo"></a></li>
+                            <li><a href="#" title="Mastercard"><img src="image/payment/mastercard.png" alt="logo"></a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__blocks-social">
+                        <p class="footer__blocks-title">
+                            Мы с соц.сетях
+                        </p>
+                        <ul class="footer__blocks-list">
+                            <li><a href="#" title="Мы вконтакте"><i class="icon-vk"></i></a></li>
+                            <li><a href="#" title="Мы в фейсбук"><i class="icon-fb"></i></a></li>
+                            <li><a href="#" title="Мы в инстаграм"><i class="icon-inst"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer__contacts">
+                    <address class="footers__contacts-address">
+                        г. Благовещенск ул.Шимановского, 80 <br>
+                        <a href="mailto:info@ricol.ru" title="Написать письмо">info@ricol.ru</a>
+                    </address>
+                    <div class="footer__phone">
+                        <a class="phone-link" href="tel:+74162770030" title="Позвонить">+7 (4162) 77-00-30</a> <br>
+                        <span>Отдел продаж</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="footer__down">
+                    <p class="footer__down-copyright">
+                        Облицовочный кирпич — оптом и в розницу.  © 2008-2019 «Риколь»
+                    </p>
+                    <!-- <p class="footer__down-text">
+                        <a href="#">Создание интернет-магазина</a>— Компания "ВебПульт" 
+                    </p> -->
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- обертка модальных окон -->
+    <div class="modal-wrap d-none">
+    </div>
+    <!-- окно авторизации -->
+    <div class="modal-login modal-window d-none">
+        <button class="modal__close">
+            <span></span>
+            <span></span>
+        </button>
+        <h4 class="modal__title">Вход</h4>
+        <label>
+            <span>E-mail</span> <br> 
+            <input type="email" placeholder="Info@info.ru" required>
+        </label>
+        <a href="#" class="modal-login__restore-link">Забыли пароль?</a>
+        <label>
+            <span>Пароль</span> <br>
+            <input type="password" placeholder="*******" required>
+        </label>
+        <div class="modal-login__btns">
+            <button class="modal-login__btn btn">Войти</button>
+            <a href="#" class="modal-login__check-link">Зарегистрироваться</a>
+        </div>
+    </div>
+    <!-- окно заказать звонок -->
+    <div class="modal-call modal-window d-none">
+        <button class="modal__close">
+            <span></span>
+            <span></span>
+        </button>
+        <h4 class="modal__title">Заказать звонок</h4>
+        <label>
+            <span>Имя</span> <br> 
+            <input type="text" placeholder="Ваше имя" required>
+        </label> 
+        <label>
+            <span>Телефон</span> <br>
+            <input type="tel" placeholder="+7 XXX-XXX-XX-XX" required>
+        </label>
+        <div class="modal-login__btns">
+            <button class="modal-call__btn btn">Заказать звонок</button> 
+        </div>
+    </div>
+    <!-- окно добавлено в корзину -->
+    <div class="modal-basket__succes modal-window d-none">
+        <button class="modal__close">
+            <span></span>
+            <span></span>
+        </button>
+        <h4 class="modal__title">Товар добавлен в корзину</h4>
+        <div class="modal-basket__succes-btns">
+            <button class="modal-basket__succes-button btn">Перейти в корзину</button>
+            <a href="#" class="modal-basket__succes-link">Продолжить покупки</a>
+        </div>
+    </div>
+    <!-- окно благодарности -->
+    <div class="modal-thanks modal-window d-none">
+        <button class="modal__close">
+            <span></span>
+            <span></span>
+        </button>
+        <h4 class="modal__title">
+            Любой сообщение: Спасибо,
+            Ошибка, Текст Шмекс
+        </h4>
+    </div> 
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script> 
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/select.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

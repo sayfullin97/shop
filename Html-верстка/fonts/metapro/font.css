@@ -1,0 +1,120 @@
+@font-face {
+  font-family: 'MetaPro-MediumItalic';
+  src: url('MetaPro-MediumItalic.eot');
+  src: url('MetaPro-MediumItalic.eot?#iefix') format('embedded-opentype'),
+       url('MetaPro-MediumItalic.svg#MetaPro-MediumItalic') format('svg'),
+       url('MetaPro-MediumItalic.ttf') format('truetype'),
+       url('MetaPro-MediumItalic.woff') format('woff'),
+       url('MetaPro-MediumItalic.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MetaPro-Normal';
+  src: url('MetaPro-Normal.eot');
+  src: url('MetaPro-Normal.eot?#iefix') format('embedded-opentype'),
+       url('MetaPro-Normal.svg#MetaPro-Normal') format('svg'),
+       url('MetaPro-Normal.ttf') format('truetype'),
+       url('MetaPro-Normal.woff') format('woff'),
+       url('MetaPro-Normal.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MetaPro-NormalItalic';
+  src: url('MetaPro-NormalItalic.eot');
+  src: url('MetaPro-NormalItalic.eot?#iefix') format('embedded-opentype'),
+       url('MetaPro-NormalItalic.svg#MetaPro-NormalItalic') format('svg'),
+       url('MetaPro-NormalItalic.ttf') format('truetype'),
+       url('MetaPro-NormalItalic.woff') format('woff'),
+       url('MetaPro-NormalItalic.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MetaPro-Black';
+  src: url('MetaPro-Black.eot');
+  src: url('MetaPro-Black.eot?#iefix') format('embedded-opentype'),
+       url('MetaPro-Black.svg#MetaPro-Black') format('svg'),
+       url('MetaPro-Black.ttf') format('truetype'),
+       url('MetaPro-Black.woff') format('woff'),
+       url('MetaPro-Black.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MetaPro-BlackItalic';
+  src: url('MetaPro-BlackItalic.eot');
+  src: url('MetaPro-BlackItalic.eot?#iefix') format('embedded-opentype'),
+       url('MetaPro-BlackItalic.svg#MetaPro-BlackItalic') format('svg'),
+       url('MetaPro-BlackItalic.ttf') format('truetype'),
+       url('MetaPro-BlackItalic.woff') format('woff'),
+       url('MetaPro-BlackItalic.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MetaPro-Bold';
+  src: url('MetaPro-Bold.eot');
+  src: url('MetaPro-Bold.eot?#iefix') format('embedded-opentype'),
+       url('MetaPro-Bold.svg#MetaPro-Bold') format('svg'),
+       url('MetaPro-Bold.ttf') format('truetype'),
+       url('MetaPro-Bold.woff') format('woff'),
+       url('MetaPro-Bold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MetaPro-BoldItalic';
+  src: url('MetaPro-BoldItalic.eot');
+  src: url('MetaPro-BoldItalic.eot?#iefix') format('embedded-opentype'),
+       url('MetaPro-BoldItalic.svg#MetaPro-BoldItalic') format('svg'),
+       url('MetaPro-BoldItalic.ttf') format('truetype'),
+       url('MetaPro-BoldItalic.woff') format('woff'),
+       url('MetaPro-BoldItalic.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MetaPro-Book';
+  src: url('MetaPro-Book.eot');
+  src: url('MetaPro-Book.eot?#iefix') format('embedded-opentype'),
+       url('MetaPro-Book.svg#MetaPro-Book') format('svg'),
+       url('MetaPro-Book.ttf') format('truetype'),
+       url('MetaPro-Book.woff') format('woff'),
+       url('MetaPro-Book.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MetaPro-BookItalic';
+  src: url('MetaPro-BookItalic.eot');
+  src: url('MetaPro-BookItalic.eot?#iefix') format('embedded-opentype'),
+       url('MetaPro-BookItalic.svg#MetaPro-BookItalic') format('svg'),
+       url('MetaPro-BookItalic.ttf') format('truetype'),
+       url('MetaPro-BookItalic.woff') format('woff'),
+       url('MetaPro-BookItalic.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MetaPro-Medium';
+  src: url('MetaPro-Medium.eot');
+  src: url('MetaPro-Medium.eot?#iefix') format('embedded-opentype'),
+       url('MetaPro-Medium.svg#MetaPro-Medium') format('svg'),
+       url('MetaPro-Medium.ttf') format('truetype'),
+       url('MetaPro-Medium.woff') format('woff'),
+       url('MetaPro-Medium.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+

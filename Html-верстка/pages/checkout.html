@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Риколь</title>
+    <link rel="shortcut icon" href="../image/favicon/favicon.ico" type="image/x-icon">
+    <!-- Шрифты -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic" rel="stylesheet">
+    <!-- Шрифтовые иконки --> 
+    <link rel="stylesheet" href="../fonts/icomoon/style.css">  
+    <!-- fancybox попап --> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css" />
+    <!-- Сетка bootstrap -->
+    <link rel="stylesheet" href="../css/grid.css">
+    <!-- Файл сброса стилей -->
+    <link rel="stylesheet" href="../css/normalize.css">
+    <!-- Файл стилей от slick-slider http://kenwheeler.github.io/slick/-->  
+    <link rel="stylesheet" href="../css/slick.css"> 
+    <link rel="stylesheet" href="../css/slick-theme.css"> 
+    <!-- Файл стилей сайта -->
+    <link rel="stylesheet" href="../css/style.css"> 
+</head>
+<body>
+    <header class="header"> 
+        <!-- Мобильное меню -->
+        <div class="hamburger__wrap-mob">  
+            <div class="menu-n">
+                <nav class="menu">
+                    <p class="menu__title">
+                        Каталог 
+                        <button class="wrap-mob__close">
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </p>
+                    <ul class="menu__list"> 
+                        <li>
+                            <a class="menu__list-dws-next">Кирпич <i class="icon-arrow_rigth"></i></a>
+                            <ul class="menu__list-dws">
+                                <li class="menu__list-dws-back"><a>Назад</a></li>
+                                <li><a href="#">Белебеевский кирпич <i class="icon-arrow_rigth"></i></a></li>
+                                <li><a href="#">Железногорский кирпич <i class="icon-arrow_rigth"></i></a></li>
+                                <li><a href="#">Старооскольский кирпич <i class="icon-arrow_rigth"></i></a></li>
+                                <li><a href="#">Кирпич ЛСР <i class="icon-arrow_rigth"></i></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Искусственный камень <i class="icon-arrow_rigth"></i></a>
+                        </li>
+                        <li>
+                            <a href="#">Тротуарная плитка <i class="icon-arrow_rigth"></i></a> 
+                        </li>
+                        <li>
+                            <a href="#">Сопутствующие товары <i class="icon-arrow_rigth"></i></a>
+                        </li>
+                    </ul>
+    
+                    <ul class="header__nav"> 
+                        <li><a class="nav-link" href="#">О компании</a></li>
+                        <li><a class="nav-link" href="#">Новости</a></li>
+                        <li><a class="nav-link" href="#">Акции</a></li>
+                        <li><a class="nav-link" href="#">Контакты</a></li>
+                    </ul> 
+                </nav> 
+    
+                <div class="header__contacts">
+                    <address class="header__contacts-address">
+                        г. Благовещенск ул.Шимановского, 80 <br>
+                        <a href="mailto:info@ricol.ru" title="Написать письмо">info@ricol.ru</a>
+                    </address>
+                    <div class="header__phone">
+                        <a class="phone-link" href="tel:+74162770030" title="Позвонить">+7 (4162) 77-00-30</a>
+                        <a class="call-me" href="#">Заказать звонок</a>
+                    </div>
+                </div> 
+            </div>  
+        </div> 
+        <!--  -->
+        <div class="header__top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-5 col-md-2 col-sm-2 d-none d-sm-block"> 
+                        <button class="d-lg-none d-block hamburger">
+                            <span></span>
+                            <span></span>  
+                            <span></span> 
+                        </button>
+                        <div class="hamburger__substrate"></div>
+                        <nav>
+                            <ul class="header__nav"> 
+                                <li><a class="nav-link" href="#">О компании</a></li>
+                                <li><a class="nav-link" href="#">Новости</a></li>
+                                <li><a class="nav-link" href="#">Акции</a></li>
+                                <li><a class="nav-link" href="#">Контакты</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-xl-6 col-lg-5 col-md-8 col-sm-7 col-8">
+                        <div class="header__search">
+                            <form class="search-input" action="/">
+                                <input type="search" placeholder="Поиск по  сайту" required>
+                                <button class="search-input__btn" type="submit" title="Найти"><i class="icon-search"></i></button>
+                            </form> 
+                        </div> 
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-3 col-4">
+                        <div class="header__login"> 
+                            <a class="login-link" href="#" title="Авторизоваться"><i class="icon-user"></i> Войти</a>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+
+        <div class="header__down">
+            <div class="container">
+                <div class="row">
+                    <div class="col-2 d-sm-none">
+                        <button class="d-lg-none d-block hamburger">
+                            <span></span>
+                            <span></span>  
+                            <span></span> 
+                        </button>
+                        <div class="hamburger__substrate"></div>   
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-4 col-sm-4 col-6"> 
+                        <div class="header__down-logo">
+                            <a class="logo" href="#" title="На главную">
+                                <img src="../image/logo.png" alt="Риколь">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-5 d-none d-sm-block">
+                        <div class="header__contacts">
+                            <address class="header__contacts-address d-none d-lg-block">
+                                г. Благовещенск ул.Шимановского, 80 <br>
+                                <a href="mailto:info@ricol.ru" title="Написать письмо">info@ricol.ru</a>
+                            </address>
+                            <div class="header__phone">
+                                <a class="phone-link" href="tel:+74162770030" title="Позвонить">+7 (4162) 77-00-30</a>
+                                <a class="call-me" href="#">Заказать звонок</a>
+                            </div>
+                        </div> 
+                    </div> 
+                    <div class="col-xl-3 col-lg-2 col-md-2 col-sm-3 col-4">
+                        <a class="header__basket basket" title="Оформить заказ"> 
+                            <i class="icon-basket"></i>
+                            <p class="d-none d-xl-flex">
+                                <span class="basket__sum">12 000, 60 р.</span> 
+                                <span class="basaket__text">Оформить заказ</span>
+                            </p> 
+                            <span class="basket__qnt basket__qnt-acive">2</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- scroll-menu -->
+        <div class="header__scroll">
+            <div class="container">
+                <div class="row">
+                    <div class="col-2 d-lg-none">
+                        <button class="d-lg-none d-block hamburger">
+                            <span></span>
+                            <span></span>  
+                            <span></span> 
+                        </button>
+                        <div class="hamburger__substrate"></div>   
+                    </div>
+                    <div class="col-lg-2 offset-lg-0 col-md-3 offset-md-2 col-sm-4 offset-sm-2 col-6">
+                        <div class="header__down-logo">
+                            <a class="logo" href="#" title="На главную">
+                                <img src="../image/logo.png" alt="Риколь">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 d-lg-block d-none">
+                        <ul class="header__scroll-list">
+                            <li><a href="#">Кирпич</a></li>
+                            <li><a href="#">Искусственный камень</a></li>
+                            <li><a href="#">Сопутствующие товары</a></li>
+                            <li><a href="#">Тротуарная плитка</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-1 offset-lg-0 col-md-2 offset-md-3 col-sm-2 offset-sm-2 col-3 offset-1">
+                        <a class="header__basket basket" title="Оформить заказ"> 
+                            <i class="icon-basket"></i>
+                            <span class="basket__qnt basket__qnt-acive">2</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="page-title">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <ul class="breadcrumbs">
+                            <li><a href="#">Главная</a></li> 
+                            <li class="breadcrumbs__current">Оформление заказа</li>
+                        </ul>
+                    </div> 
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <h1>Оформление заказа</h1>
+                    </div> 
+                </div> 
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <ul class="footer__list">
+                    <li class="footer__list-title">Каталог</li>
+                    <li><a href="#" class="nav-link">Кирпич</a></li>
+                    <li><a href="#" class="nav-link">Искусственный камень</a></li>
+                    <li><a href="#" class="nav-link">Тротуарная плитка</a></li>
+                    <li><a href="#" class="nav-link">Сопутствующие товары</a></li> 
+                </ul>
+
+                <ul class="footer__list">
+                    <li class="footer__list-title">Риколь</li>
+                    <li><a href="#" class="nav-link">О компании</a></li>
+                    <li><a href="#" class="nav-link">Сервис</a></li>
+                    <li><a href="#" class="nav-link">Фото объектов</a></li>
+                    <li><a href="#" class="nav-link">Новости</a></li>
+                    <li><a href="#" class="nav-link">Акции</a></li>
+                    <li><a href="#" class="nav-link">Контакты</a></li>
+                </ul>
+
+                <ul class="footer__list">
+                    <li class="footer__list-title">Помощь</li>
+                    <li><a href="#" class="nav-link">Доставка</a></li>
+                    <li><a href="#" class="nav-link">Оплата</a></li>
+                    <li><a href="#" class="nav-link">Обмен и возврат</a></li>
+                    <li><a href="#" class="nav-link">Как оформить заказ</a></li> 
+                </ul>
+
+                <div class="footer__blocks">
+                    <div class="footer__blocks-payments">
+                        <p class="footer__blocks-title">
+                            Способы оплаты
+                        </p>
+                        <ul class="footer__blocks-list">
+                            <li><a href="#" title="Мир"><img src="../image/payment/mir.png" alt="logo"></a></li>
+                            <li><a href="#" title="Visa"><img src="../image/payment/visa.png" alt="logo"></a></li>
+                            <li><a href="#" title="Mastercard"><img src="../image/payment/mastercard.png" alt="logo"></a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__blocks-social">
+                        <p class="footer__blocks-title">
+                            Мы с соц.сетях
+                        </p>
+                        <ul class="footer__blocks-list">
+                            <li><a href="#" title="Мы вконтакте"><i class="icon-vk"></i></a></li>
+                            <li><a href="#" title="Мы в фейсбук"><i class="icon-fb"></i></a></li>
+                            <li><a href="#" title="Мы в инстаграм"><i class="icon-inst"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer__contacts">
+                    <address class="footers__contacts-address">
+                        г. Благовещенск ул.Шимановского, 80 <br>
+                        <a href="mailto:info@ricol.ru" title="Написать письмо">info@ricol.ru</a>
+                    </address>
+                    <div class="footer__phone">
+                        <a class="phone-link" href="tel:+74162770030" title="Позвонить">+7 (4162) 77-00-30</a> <br>
+                        <span>Отдел продаж</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="footer__down">
+                    <p class="footer__down-copyright">
+                        Облицовочный кирпич — оптом и в розницу.  © 2008-2019 «Риколь»
+                    </p>
+                    <!-- <p class="footer__down-text">
+                        <a href="#">Создание интернет-магазина</a>— Компания "ВебПульт" 
+                    </p> -->
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- обертка модальных окон -->
+    <div class="modal-wrap d-none">
+    </div>
+    <!-- окно авторизации -->
+    <div class="modal-login modal-window d-none">
+        <button class="modal__close">
+            <span></span>
+            <span></span>
+        </button>
+        <h4 class="modal__title">Вход</h4>
+        <label>
+            <span>E-mail</span> <br> 
+            <input type="email" placeholder="Info@info.ru" required>
+        </label>
+        <a href="#" class="modal-login__restore-link">Забыли пароль?</a>
+        <label>
+            <span>Пароль</span> <br>
+            <input type="password" placeholder="*******" required>
+        </label>
+        <div class="modal-login__btns">
+            <button class="modal-login__btn btn">Войти</button>
+            <a href="#" class="modal-login__check-link">Зарегистрироваться</a>
+        </div>
+    </div>
+    <!-- окно заказать звонок -->
+    <div class="modal-call modal-window d-none">
+        <button class="modal__close">
+            <span></span>
+            <span></span>
+        </button>
+        <h4 class="modal__title">Заказать звонок</h4>
+        <label>
+            <span>Имя</span> <br> 
+            <input type="text" placeholder="Ваше имя" required>
+        </label> 
+        <label>
+            <span>Телефон</span> <br>
+            <input type="tel" placeholder="+7 XXX-XXX-XX-XX" required>
+        </label>
+        <div class="modal-login__btns">
+            <button class="modal-call__btn btn">Заказать звонок</button> 
+        </div>
+    </div>
+    <!-- окно добавлено в корзину -->
+    <div class="modal-basket__succes modal-window d-none">
+        <button class="modal__close">
+            <span></span>
+            <span></span>
+        </button>
+        <h4 class="modal__title">Товар добавлен в корзину</h4>
+        <div class="modal-basket__succes-btns">
+            <button class="modal-basket__succes-button btn">Перейти в корзину</button>
+            <a href="#" class="modal-basket__succes-link">Продолжить покупки</a>
+        </div>
+    </div>
+    <!-- окно благодарности -->
+    <div class="modal-thanks modal-window d-none">
+        <button class="modal__close">
+            <span></span>
+            <span></span>
+        </button>
+        <h4 class="modal__title">
+            Любой сообщение: Спасибо,
+            Ошибка, Текст Шмекс
+        </h4>
+    </div> 
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>   
+    <script src="../js/jquery.maskedinput.min.js"></script>
+    <script src="../js/slick.min.js"></script>
+    <script src="../js/select.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>
