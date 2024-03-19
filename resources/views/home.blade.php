@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
-<body>   
+<body>
     <h1>Заголовок</h1>
+    <p>Andrey was here</p>
 </body>
 </html>
